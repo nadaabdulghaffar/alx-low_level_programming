@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include <stdio.h>
+=======
+ #include <stdio.h>
+>>>>>>> a629a22904cf062acef4d60a107afbfcee1d2065
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -28,3 +32,7 @@ return (0);
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a629a22904cf062acef4d60a107afbfcee1d2065
