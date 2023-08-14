@@ -3,6 +3,11 @@
 #include <stdio.h>
 #include "dog.h"
 
+/**
+ * print_dog-print dog struct info
+ * @d: pointer to struct
+*/
+
 void print_dog(struct dog *d)
 {
     if (d)
