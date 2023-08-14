@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * init_dog-function init info of dog
+ * init_dog - function init info of dog
  * @d: pointer to struct
  * @name:dog's name
  * @age:dog's age
