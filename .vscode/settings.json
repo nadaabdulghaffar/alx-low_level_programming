@@ -1,5 +1,9 @@
 {
     "files.associations": {
-        "dog.h": "c"
+        "dog.h": "c",
+        "function_pointers.h": "c",
+        "variadic_functions.h": "c",
+        "stdarg.h": "c",
+        "stdio.h": "c"
     }
 }
