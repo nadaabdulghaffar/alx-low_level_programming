@@ -1,55 +1,26 @@
-#include <stdio.h>
-#include <stdarg.h>
+#include "main.h"
 
-void print_all(const char * const format, ...)
+/**
+ * _printf() - function that produces output according to a format.
+ * @format:composed of zero or more directives
+ * Returns: the number of characters printed
+*/
+
+int _printf(const char *format, ...)
 {
     va_list args;
-    unsigned int i = 0,size = 0;
-    char *str;
+    unsigned int i = 0;
 
     va_start(args, format);
 
-    while(format[i])
+    if(format == NULL)
+        return(-1);
+
+    while (format[i])
     {
-        if (i > 0 && (format[i] == 'c') ||(format[i] == 'i') ||(format[i] == 'f') ||(format[i] == 's'))
-            printf(", ");
         
-        switch (format[i])
-        {
-        case 'c':
-            printf("%c ",va_arg(args, int));
-            break;
-        case 'i':
-            printf("%d ",va_arg(args, int));
-            break;
-        case 'f':
-          printf("%f ",va_arg(args, double));
-            break;        
-        case 's':
-            str = va_arg(args, char *);
-            if(str == NULL)
-                printf("(nil)");
-            else
-                printf("%s ",str);
-            break;
-        }
-        i++;
-
+        if(format[i])
     }
-    printf("\n");
-   
 
-    va_end(args);
-
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_all("ceis", 'B', 3, "stSchool");
-    return (0);
+    
 }

@@ -4,6 +4,7 @@
         "function_pointers.h": "c",
         "variadic_functions.h": "c",
         "stdarg.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "lists.h": "c"
     }
 }
