@@ -2,7 +2,7 @@
 
 /**
  * listint_len() - returns the number of elements in a linked
- * @h: linked list fo type listint_t
+ * @h: linked list of type listint_t to traverse
  * 
  * Return: the number of elements
  */
@@ -15,7 +15,7 @@ size_t listint_len(const listint_t *h)
 		counter++;
 		h = h->next;
 	}
-	
+
 	return (counter);
 }
 
