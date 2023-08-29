@@ -1,7 +1,8 @@
-#ifndef LIST_H
-#define LIST_H
-#include <stdlib.h>
+#ifndef LISTS_H
+#define LISTS_H
+
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - singly linked list
@@ -9,7 +10,7 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- *
+ * for alx project
  */
 typedef struct listint_s
 {
@@ -17,13 +18,12 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-int _putchar(char c);
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
+listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
 void free_listint2(listint_t **head);
-listint_t *add_nodeint_end(listint_t **head, const int n);
 int pop_listint(listint_t **head);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int sum_listint(listint_t *head);
