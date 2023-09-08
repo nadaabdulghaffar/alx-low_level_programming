@@ -6,7 +6,6 @@
  *  Return: writereturn-number of bytes read and printed
  *        0 when function fails or filename is NULL.
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t fd;
